@@ -66,8 +66,6 @@
                 AT END SET EOF TO TRUE
            END-READ
 
-
-      * Should only be one iteration in this case!
            PERFORM UNTIL EOF
              PERFORM 100-count-points
              READ Scratch-Cards NEXT RECORD
